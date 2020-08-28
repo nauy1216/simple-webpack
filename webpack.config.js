@@ -18,6 +18,9 @@ module.exports = function () {
         context: __dirname,
         plugins: [
             new webpack.HotModuleReplacementPlugin(),
+            new HelloPlugin({
+                test: '123'
+            })
         ]
     }
 }
